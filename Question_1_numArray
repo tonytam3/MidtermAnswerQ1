@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int arraySize = 0;
+  cout<<"Please State the Size of Your Array"<<endl;
+  cin>>arraySize;
+
+  double numArray[arraySize]; 
+
+  int n=0;
+  double input;
+  
+  do{
+    cout<<"Please enter the desired interger"<<endl;
+    cin>>input;
+    numArray[n]=input;
+    n++;
+  }while(n<arraySize);
+
+  cout<<"This is the store array variables"<<endl<<endl;
+
+  for (int i=0; i<arraySize; i++){
+    cout<<"Array Index: "<<i<<": "<<numArray[i]<<endl;
+  }
+}
